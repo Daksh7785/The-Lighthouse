@@ -494,7 +494,7 @@ function isMeaningfulReview(text) {
   const words = text.trim().split(/\s+/);
 
   // Reject repeated and random characters
-  const randomPattern = /^(.)\1+$|^[a-zA-Z]{1,6}$/;
+  const randomPattern = /^(.)\1+$/;
 
   if (randomPattern.test(text.trim())) return false;
 
